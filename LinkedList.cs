@@ -49,6 +49,28 @@ namespace LinkedLIst
 
                 current.Next = newNode;
              }
+
+            public void AddInBetween(int data, int position)
+            {
+               if (position <= 0)
+               {
+                Console.WriteLine("Invalid position");
+                return;
+               }
+
+               LinkedListNode newNode = new LinkedListNode(data);
+
+               LinkedListNode current = head;
+               LinkedListNode previous = null;
+              for (int i = 0; i < position && current != null; i++)
+              {
+                previous = current;
+                current = current.Next;
+              }
+
+               previous.Next = newNode;
+              newNode.Next = current;
+            }
         }
 
  }
