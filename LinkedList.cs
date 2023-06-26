@@ -105,7 +105,30 @@ namespace LinkedLIst
 
             current.Next = null;
             }
-       }
+
+
+            public void DeleteInBetween(int position)
+            {
+            if (position <= 0)
+            {
+                Console.WriteLine("Invalid position");
+                return;
+            }
+
+
+            LinkedListNode current = head;
+            LinkedListNode previous = null;
+            for (int i = 0; i < position && current != null; i++)
+            {
+                previous = current;
+                current = current.Next;
+            }
+
+            previous.Next = current.Next;
+
+
+            }
+     }
 
  }
 

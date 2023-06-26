@@ -31,6 +31,10 @@ namespace LinkedLIst
 
             linkedList1.DeleteLast();
             linkedList1.Display();
+
+            linkedList1.DeleteInBetween(2);
+
+            linkedList1.Display();
         }
     }
 }
