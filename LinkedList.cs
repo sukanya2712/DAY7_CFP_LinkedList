@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedLIst
 {
-        class LinkedList
+     class LinkedList
         {
             private LinkedListNode head;
 
@@ -71,7 +71,18 @@ namespace LinkedLIst
                previous.Next = newNode;
               newNode.Next = current;
             }
-        }
+
+            public void DeleteFirst()
+            {
+               if (head == null)
+               {
+                Console.WriteLine("Linked list is empty");
+                return;
+               }
+
+              head = head.Next;
+            }
+     }
 
  }
 

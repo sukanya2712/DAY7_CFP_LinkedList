@@ -20,6 +20,14 @@ namespace LinkedLIst
 
             linkedList1.Display();
 
+            linkedList1.AddInBetween(1, 2);
+            linkedList1.AddInBetween(2, 5);
+            linkedList1.AddInBetween(3, 8);
+
+            linkedList1.Display();
+
+            linkedList1.DeleteFirst();
+            linkedList1.Display();
         }
     }
 }
