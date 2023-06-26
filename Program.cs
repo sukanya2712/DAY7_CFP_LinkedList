@@ -12,9 +12,14 @@ namespace LinkedLIst
             linkedList1.AddFirst(20);
             linkedList1.AddFirst(10);
 
-            
+            linkedList1.Display();
 
-            
+            linkedList1.AddLast(40);
+            linkedList1.AddLast(50);
+            linkedList1.AddLast(60);
+
+            linkedList1.Display();
+
         }
     }
 }

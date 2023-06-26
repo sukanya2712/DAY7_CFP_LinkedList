@@ -30,6 +30,25 @@ namespace LinkedLIst
 
                 Console.WriteLine();
             }
+
+             public void AddLast(int data)
+             {
+                LinkedListNode newNode = new LinkedListNode(data);
+
+                if (head == null)
+                {
+                    head = newNode;
+                    return;
+                }
+
+                LinkedListNode current = head;
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
+
+                current.Next = newNode;
+             }
         }
 
  }
