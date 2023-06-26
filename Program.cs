@@ -8,7 +8,13 @@ namespace LinkedLIst
         {
             LinkedList linkedList1 = new LinkedList();
 
-           
+            linkedList1.AddFirst(30);
+            linkedList1.AddFirst(20);
+            linkedList1.AddFirst(10);
+
+            
+
+            
         }
     }
 }

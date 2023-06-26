@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace LinkedLIst
 {
-  
-       
+    class LinkedList
+    {
+        private LinkedListNode head;
 
-        class LinkedList
+        public void AddFirst(int data)
         {
-            private LinkedListNode head;
-
-            
+            LinkedListNode newNode = new LinkedListNode(data);
+            newNode.Next = head;
+            head = newNode;
         }
 
+
     }
+
+ }
 
