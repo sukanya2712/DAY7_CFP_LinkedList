@@ -28,6 +28,9 @@ namespace LinkedLIst
 
             linkedList1.DeleteFirst();
             linkedList1.Display();
+
+            linkedList1.DeleteLast();
+            linkedList1.Display();
         }
     }
 }
